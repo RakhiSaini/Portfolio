@@ -1,56 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
     <!-- Include Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-<style>
-    /* Skills Section Styles */
-.skills-section {
-  background-color: #222;
-  color: #fff;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 20px;
-}
-
-.skills-category {
-  flex: 1 1 250px;
-  padding: 20px;
-  border-radius: 8px;
-  background: #333;
-}
-
-.skills-category h3 {
-  margin-bottom: 15px;
-}
-
-.skills-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.skills-icons img {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-</style>
-
 <body>
     <header id="home">
         <nav>
@@ -61,7 +20,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                
+
 
             </ul>
         </nav>
@@ -75,7 +34,10 @@
                     <p class="fade-in" style="transition-delay: 0.5s;">A Creative Web Developer</p>
                 </div>
             </div>
-            <a href="#" class="btn scale-in" style="transition-delay: 1s;" onclick="openResume()">Resume</a>
+            <!-- <a href="#" class="btn scale-in" style="transition-delay: 1s;" onclick="openResume()">Resume</a> -->
+            <a class="btn scale-in" href="https://drive.google.com/file/d/1pEOlQ5LosfY9YfcOknuQvo2gOK9zoCrP/view"
+                target="_blank" rel="noopener noreferrer" id="resume-link">Resume</a>
+
         </div>
     </header>
 
@@ -83,9 +45,15 @@
         <div class="container">
             <h2 class="fade-in">About Me</h2>
             <!-- <p class="fade-in" style="transition-delay: 0.5s;">I am a passionate web developer with experience in various technologies. I build responsive, user-friendly websites with a focus on modern design and intuitive user interfaces.</p> -->
-            <p class="fade-in" style="transition-delay: 0.5s;">Hello! I’m Rakhi Saini, a passionate full-stack web developer dedicated to creating seamless and engaging web experiences. With a background in Computer Science, I have a strong foundation in coding principles and problem-solving techniques. I thrive on turning ideas into reality, whether it’s building responsive websites or developing dynamic applications.
+            <p class="fade-in" style="transition-delay: 0.5s;">Hello! I’m Rakhi Saini, a passionate full-stack web
+                developer dedicated to creating seamless and engaging web experiences. With a background in Computer
+                Science, I have a strong foundation in coding principles and problem-solving techniques. I thrive on
+                turning ideas into reality, whether it’s building responsive websites or developing dynamic
+                applications.
 
-                I specialize in modern web technologies, focusing on user-centric design and functionality. My collaborative spirit shines through in team projects, where I enjoy merging creativity with technology to tackle real-world challenges.</p>
+                I specialize in modern web technologies, focusing on user-centric design and functionality. My
+                collaborative spirit shines through in team projects, where I enjoy merging creativity with technology
+                to tackle real-world challenges.</p>
         </div>
     </section>
 
@@ -96,34 +64,46 @@
                 <div class="project-card fade-in" style="transition-delay: 0.5s;">
                     <img src="./Img/adidas project.jpg" alt="Project 1">
                     <h3>Adidas Clone</h3>
-                    <p>At Adidas, we’re dedicated to empowering athletes and individuals with cutting-edge sportswear and footwear that combines performance and style. Our mission is to inspire through innovation, continuously pushing the boundaries of design and technology. Whether you’re on the field or in the city, we equip you to perform at your best.</p>
+                    <p>At Adidas, we’re dedicated to empowering athletes and individuals with cutting-edge sportswear
+                        and footwear that combines performance and style. Our mission is to inspire through innovation,
+                        continuously pushing the boundaries of design and technology. Whether you’re on the field or in
+                        the city, we equip you to perform at your best.</p>
                     <div class="project-buttons">
                         <a href="https://github.com/Mihirvetal/Adidas-clone" target="_blank" class="btn">GitHub Repo</a>
-                        <a href=" https://66d47374809e46081db20411--ubiquitous-tiramisu-c08e19.netlify.app/" target="_blank" class="btn">Live Demo</a>
+                        <a href=" https://66d47374809e46081db20411--ubiquitous-tiramisu-c08e19.netlify.app/"
+                            target="_blank" class="btn">Live Demo</a>
                     </div>
                 </div>
                 <div class="project-card fade-in" style="transition-delay: 1s;">
                     <img src="./Img/present flow.jpg" alt="Project 2">
                     <h3>Present Flow</h3>
-                    <p>The scope of Present Flow is to create an intuitive, user-friendly presentation creation platform that allows users to design professional-quality presentations effortlessly. It includes a variety of pre-designed templates, extensive customization options, real-time previews, and a dedicated presentation mode.</p>
+                    <p>The scope of Present Flow is to create an intuitive, user-friendly presentation creation platform
+                        that allows users to design professional-quality presentations effortlessly. It includes a
+                        variety of pre-designed templates, extensive customization options, real-time previews, and a
+                        dedicated presentation mode.</p>
                     <div class="project-buttons">
-                        <a href="https://github.com/RakhiSaini/Renewable-Revolutionaries_024" target="_blank" class="btn">GitHub Repo</a>
+                        <a href="https://github.com/RakhiSaini/Renewable-Revolutionaries_024" target="_blank"
+                            class="btn">GitHub Repo</a>
                         <a href="https://slide-omega.vercel.app/" target="_blank" class="btn">Live Demo</a>
                     </div>
                 </div>
                 <div class="project-card fade-in" style="transition-delay: 1.5s;">
                     <img src="./Img/sugar cosmatic.jpg" alt="Project 3">
                     <h3>Sugar Cosmatic</h3>
-                    <p>The simplicity and elegance of vanilla are often seen as classic and understated. Focus on essential beauty products that bring out the beauty in simplicity. To excel in the beauty industry, we focus on providing a wide range of high-quality, affordable beauty products that meet all skin and hair care needs for everyone.</p>
+                    <p>The simplicity and elegance of vanilla are often seen as classic and understated. Focus on
+                        essential beauty products that bring out the beauty in simplicity. To excel in the beauty
+                        industry, we focus on providing a wide range of high-quality, affordable beauty products that
+                        meet all skin and hair care needs for everyone.</p>
                     <div class="project-buttons">
-                        <a href="https://github.com/VenkataRamanaDerangula/Declaration-Designers_012" target="_blank" class="btn">GitHub Repo</a>
+                        <a href="https://github.com/VenkataRamanaDerangula/Declaration-Designers_012" target="_blank"
+                            class="btn">GitHub Repo</a>
                         <a href=" https://vanilla-cosmetics.netlify.app/" target="_blank" class="btn">Live Demo</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
@@ -176,7 +156,7 @@
                     <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel">
                     <img src="https://skillicons.dev/icons?i=vscode" alt="VSCode">
                     <img src="https://skillicons.dev/icons?i=replit" alt="Replit">
-                    <img src="./Img/chat-gpt.png" alt="CHATGPT" >
+                    <img src="./Img/chat-gpt.png" alt="CHATGPT">
                 </div>
             </div>
         </div>
@@ -210,98 +190,12 @@
         <p>&copy; 2024 Your Name. All rights reserved.</p>
         <div class="socials">
             <!-- <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> -->
-            <a href="https://www.linkedin.com/in/rakhi-saini-68a072223/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/rakhi-saini-68a072223/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
             <a href="https://github.com/RakhiSaini/RakhiSaini" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </footer>
 
-    <script>
-
-function openResume() {
-    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1pEOlQ5LosfY9YfcOknuQvo2gOK9zoCrP'; // Direct download link
-
-    // Open the resume link in a new tab
-    window.open(resumeUrl, '_blank');
-
-    // Create a temporary link element to trigger the download
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'Your_Resume.pdf'; // Specify the name for the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-
-
-        // Function to handle fade-in animations
-        function fadeInElements() {
-            const elements = document.querySelectorAll('.fade-in, .scale-in');
-            elements.forEach((element) => {
-                const rect = element.getBoundingClientRect();
-                const windowHeight = window.innerHeight;
-
-                if (rect.top < windowHeight && rect.bottom > 0) {
-                    element.classList.add('visible');
-                }
-            });
-        }
-
-        // Initial fade-in on load
-        window.addEventListener('load', fadeInElements);
-        
-        // Fade-in on scroll
-        window.addEventListener('scroll', fadeInElements);
-
-        // Form Validation
-        const form = document.querySelector('.contact-form');
-        const nameInput = document.querySelector('#name');
-        const emailInput = document.querySelector('#email');
-        const messageInput = document.querySelector('#message');
-
-        const nameError = document.querySelector('#name-error');
-        const emailError = document.querySelector('#email-error');
-        const messageError = document.querySelector('#message-error');
-
-        form.addEventListener('submit', (e) => {
-            let formIsValid = true;
-
-            nameError.style.display = 'none';
-            emailError.style.display = 'none';
-            messageError.style.display = 'none';
-
-            if (!nameInput.value.trim()) {
-                formIsValid = false;
-                nameError.style.display = 'block';
-            }
-
-            if (!emailInput.value.trim() || !emailInput.checkValidity()) {
-                formIsValid = false;
-                emailError.style.display = 'block';
-            }
-
-            if (!messageInput.value.trim()) {
-                formIsValid = false;
-                messageError.style.display = 'block';
-            }
-
-            if (!formIsValid) {
-                e.preventDefault();
-            }
-        });
-
-        // Smooth Scroll for Navigation
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetSection = document.querySelector(this.getAttribute('href'));
-
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
