@@ -6,12 +6,15 @@ document.getElementById('resume-link').addEventListener('click', function (event
 
     // Download the resume
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/uc?export=download&id=1pEOlQ5LosfY9YfcOknuQvo2gOK9zoCrP';
+    link.href = 'https://drive.google.com/file/d/1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm/view';
     link.download = 'Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 });
+
+// https://drive.google.com/uc?export=download&id=1pEOlQ5LosfY9YfcOknuQvo2gOK9zoCrP
+
 
 // function openResume() {
 //     const resumeUrl = 'https://drive.google.com/uc?export=download&id=1pEOlQ5LosfY9YfcOknuQvo2gOK9zoCrP'; // Direct download link
