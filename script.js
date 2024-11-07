@@ -3,10 +3,12 @@ document.getElementById('resume-link').addEventListener('click', function (event
 
     // Open the resume in a new tab
     window.open(this.href, '_blank');
+    
 
     // Download the resume
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm/view';
+    // link.href = 'https://drive.google.com/file/d/1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm/view';
+    link.href = 'https://drive.google.com/uc?export=download&id=1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm';
     link.download = 'Resume.pdf';
     document.body.appendChild(link);
     link.click();
