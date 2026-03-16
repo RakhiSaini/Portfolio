@@ -8,7 +8,8 @@ document.getElementById('resume-link').addEventListener('click', function (event
     // Download the resume
     const link = document.createElement('a');
     // link.href = 'https://drive.google.com/file/d/1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm/view';
-    link.href = 'https://drive.google.com/uc?export=download&id=1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm';
+    // link.href = 'https://drive.google.com/uc?export=download&id=1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm';
+    link.href = 'https://drive.google.com/uc?export=download&id=1yZvJ-aM_Nr7Gewsc_JBPIL8WR0GQSkpV';
     link.download = 'Resume.pdf';
     document.body.appendChild(link);
     link.click();
