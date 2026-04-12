@@ -10,7 +10,7 @@ document.getElementById('resume-link').addEventListener('click', function (event
     // link.href = 'https://drive.google.com/file/d/1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm/view';
     // link.href = 'https://drive.google.com/uc?export=download&id=1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm';
     // link.href = 'https://drive.google.com/uc?export=download&id=1yZvJ-aM_Nr7Gewsc_JBPIL8WR0GQSkpV';
-    link.href = 'https://drive.google.com/uc?export=download&id=1CtyS5ijK-_beu3uQ_-QYrVufpOhwnifv';
+    link.href = 'https://drive.google.com/uc?export=download&id=163gtB0ySJOdaDAB6hmLvF-cD020Xa75u';
     link.download = 'Resume.pdf';
     document.body.appendChild(link);
     link.click();
