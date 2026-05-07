@@ -1,21 +1,53 @@
-document.getElementById('resume-link').addEventListener('click', function (event) {
-    // event.preventDefault(); // Prevent the default action
+// document.getElementById('resume-link').addEventListener('click', function (event) {
+//     // event.preventDefault(); // Prevent the default action
 
-    // Open the resume in a new tab
-    window.open(this.href, '_blank');
+//     // Open the resume in a new tab
+//     window.open(this.href, '_blank');
     
 
-    // Download the resume
-    const link = document.createElement('a');
-    // link.href = 'https://drive.google.com/file/d/1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm/view';
-    // link.href = 'https://drive.google.com/uc?export=download&id=1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm';
-    // link.href = 'https://drive.google.com/uc?export=download&id=1yZvJ-aM_Nr7Gewsc_JBPIL8WR0GQSkpV';
-    link.href = 'https://drive.google.com/uc?export=download&id=163gtB0ySJOdaDAB6hmLvF-cD020Xa75u';
-    link.download = 'Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+//     // Download the resume
+//     const link = document.createElement('a');
+//     // link.href = 'https://drive.google.com/file/d/1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm/view';
+//     // link.href = 'https://drive.google.com/uc?export=download&id=1WpIApFUXDFBi7GOSX5SoH_VA2edg-dAm';
+//     // link.href = 'https://drive.google.com/uc?export=download&id=1yZvJ-aM_Nr7Gewsc_JBPIL8WR0GQSkpV';
+//     // link.href = 'https://drive.google.com/uc?export=download&id=163gtB0ySJOdaDAB6hmLvF-cD020Xa75u';
+//     link.href = 'https://drive.google.com/uc?export=download&id=1qY_bLVQfw5NJcMjZ2fl8CeLAMEfIKNEW';
+//     link.download = 'Resume.pdf';
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// });
+
+// new code for resume download and open in new tab-
+const resumeLinks = document.querySelectorAll('#resume-link, #nav-resume-link');
+
+resumeLinks.forEach((linkItem) => {
+
+    linkItem.addEventListener('click', function () {
+
+        // Open Resume in New Tab
+        window.open(
+            'https://drive.google.com/file/d/1qY_bLVQfw5NJcMjZ2fl8CeLAMEfIKNEW/view',
+            '_blank'
+        );
+
+        // Auto Download Resume
+        const downloadLink = document.createElement('a');
+
+        downloadLink.href =
+            'https://drive.google.com/uc?export=download&id=1qY_bLVQfw5NJcMjZ2fl8CeLAMEfIKNEW';
+
+        downloadLink.download = 'Rakhi_Saini.pdf';
+
+        document.body.appendChild(downloadLink);
+
+        downloadLink.click();
+
+        document.body.removeChild(downloadLink);
+    });
+
 });
+
 
 // https://drive.google.com/uc?export=download&id=1pEOlQ5LosfY9YfcOknuQvo2gOK9zoCrP
 
